@@ -14,6 +14,7 @@
 		A1000001222222220000005A /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000001111111110000005A /* PokemonDetailViewController.swift */; };
 		A1000001222222220000006A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1000001111111110000006A /* LaunchScreen.storyboard */; };
 		A1000001222222220000007A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000001111111110000007A /* Assets.xcassets */; };
+		A1000001222222220000008A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1000001111111110000009A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A1000001111111110000006A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1000001111111110000007A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1000001111111110000008A /* PokemonExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000001111111110000009A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				A1000001111111110000005A /* PokemonDetailViewController.swift */,
 				A1000001111111110000006A /* LaunchScreen.storyboard */,
 				A1000001111111110000007A /* Assets.xcassets */,
+				A1000001111111110000009A /* Main.storyboard */,
 			);
 			path = PokemonExplorer;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			files = (
 				A1000001222222220000006A /* LaunchScreen.storyboard in Resources */,
 				A1000001222222220000007A /* Assets.xcassets in Resources */,
+				A1000001222222220000008A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

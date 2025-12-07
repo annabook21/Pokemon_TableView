@@ -54,16 +54,23 @@ class PokemonTableViewController: UITableViewController {
         return cell
     }
     
-    // Handle cell selection
+    // Handle cell selection - use segue for navigation
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let selectedPokemon = pokemon[indexPath.row]
-        
-        // pass data to detail view
-        let detailVC = PokemonDetailViewController()
-        detailVC.pokemon = selectedPokemon
-        navigationController?.pushViewController(detailVC, animated: true)
+        // trigger segue to detail view
+        performSegue(withIdentifier: "showPokemonDetail", sender: indexPath)
+    }
+    
+    // MARK: - Segue - Pass data to SecondViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPokemonDetail" {
+            if let indexPath = sender as? IndexPath,
+               let detailVC = segue.destination as? PokemonDetailViewController {
+                // pass selected pokemon to detail view controller
+                detailVC.pokemon = pokemon[indexPath.row]
+            }
+        }
     }
     
     // tap animation
